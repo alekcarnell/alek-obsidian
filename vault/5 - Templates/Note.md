@@ -1,13 +1,8 @@
 ---
-collection: books
+collection: notes
 date: <% tp.date.now("YYYY-MM-DD") %>
-date published:
-author:
-ISBN:
 tags: []
-image:
 ---
 # Notes
-
 
 
