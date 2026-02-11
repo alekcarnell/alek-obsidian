@@ -16,8 +16,8 @@ Based on my personal needs, I found out that I need to lean slightly more into e
 
 - **Time stamping** somewhere in the structure of the note itself. Frontmatter or Zettelkasten style. (even though files have operating system level time stamps that Obsidian can read, this falls apart if you ever copy your vault and pull from a backup)
 - I like to have a **dedicated Projects folder**. 
-- I leverage Obisidan **links** for how well Obsidian supports it, but I don't want a Wikipedia as my PKM. That is redundant and clunky.
-- I don't use anything with a **calendar**. It's a distraction, I already have a more powerful calendar in my email account, and Daily Notes are mostly useless for productivty. 
+- I leverage Obsidian **links** for how well Obsidian supports it, but I don't want a Wikipedia as my PKM. That is redundant and clunky.
+- I don't use anything with a **calendar**. It's a distraction, I already have a more powerful calendar in my email account, and Daily Notes are mostly useless for productivity. 
 - I do find value in having an **inbox** for short term focus. But I do not want any more structure than that (with the exception of the projects folder).
 
 ## Structure
@@ -41,7 +41,7 @@ New and unfinished notes go into the Inbox folder. I might keep less than 10 not
 Main Notes houses just about everything. I keep about 1000 notes in my live vault all in this one folder with no further organization. To work with older material I rely entirely on search. I find that I do not have any issues with this at all and can find everything that I work on (journal, dream journal, projects, reading, random thoughts, etc) very quickly. 
 
 ### ├── Projects
-I do allow for further folder creation here to organize projects. I use things like Canvas for projects and find that it's best to keep them in dedicated folders becase (1) there is so few compared to other material in the vault and (2) because canvas's can not have as rich of metadata as a normal .md file. 
+I do allow for further folder creation here to organize projects. I use things like Canvas for projects and find that it's best to keep them in dedicated folders because (1) there is so few compared to other material in the vault and (2) because canvas's can not have as rich of metadata as a normal .md file. 
 
 ### ├── Templates
 This is where I store my templates. I only keep a small handful of templates here. Again, the point is to reduce friction. Frontmatter and templates are friction that prevent me from just getting words down. I keep a template for:
@@ -49,9 +49,9 @@ This is where I store my templates. I only keep a small handful of templates her
 - Notes: catch-all for just about anything
 - Books: notes on books that I have read
 - Dreams: I look back on dreams more than anything so having a separate collection for this helps for analysis
-- Videos: notes on interesting videos I have watched. I don't bother with movies because they don't contain anything that a book doesnt already have.
+- Videos: notes on interesting videos I have watched. I don't bother with movies because they don't contain anything that a book does not already have.
 - People: One of my more important templates to link notes, ideas, videos, books, etc back to a person and then be able to have a compendium of that persons corpus.
-- Project: Honestly this one may not be necassary but I have it for now. 
+- Project: Honestly this one may not be necessary but I have it for now. 
 
 ### ├── Attachments
 An Obsidian-specific addition because of how it handles images and attachments. I would prefer to have them all in one folder rather than floating in Main Notes, since not all attachments will belong to a note in Main Notes. 
@@ -64,7 +64,7 @@ Great and a feature rich way to work with templates, though I keep mine pretty s
 - [Code Styler](https://github.com/mayurankv/Obsidian-Code-Styler)
 Purely for aesthetic reasons. I like my scripts to look nice.
 - [Notebook Navigator](https://github.com/johansan/notebook-navigator)
-Borderline a must-have at this point. I was acheiving a similar functionailty to recent files and multiple pane explorers before by using Bases but this is so much better. 
+Borderline a must-have at this point. I was achieving a similar functionality to recent files and multiple pane explorers before by using Bases but this is so much better. 
 
 
 ## Getting Started
