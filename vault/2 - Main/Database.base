@@ -1,0 +1,173 @@
+filters:
+  and:
+    - file.inFolder("/")
+formulas:
+  Date: date(note.date)
+properties:
+  formula.Date:
+    displayName: Created Date
+views:
+  - type: table
+    name: Everything
+    filters:
+      and:
+        - file.inFolder("/")
+        - '!file.inFolder("5 - Images")'
+    order:
+      - file.name
+      - formula.Date
+      - file.tags
+      - collection
+    sort:
+      - property: formula.Date
+        direction: DESC
+      - property: collection
+        direction: ASC
+      - property: formula.Untitled
+        direction: ASC
+    columnSize:
+      file.name: 219
+      formula.Date: 145
+      file.tags: 208
+  - type: table
+    name: Dynamic
+    filters:
+      and:
+        - file.haslink(this.file)
+    order:
+      - file.name
+      - Date Published
+      - author
+      - collection
+    sort:
+      - property: tags
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: collection
+        direction: ASC
+      - property: formula.Date
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      file.name: 254
+      note.author: 177
+  - type: table
+    name: Notes
+    filters:
+      and:
+        - collection == "notes"
+    order:
+      - file.name
+      - formula.Date
+      - file.tags
+      - file.ctime
+      - collection
+    sort:
+      - property: collection
+        direction: ASC
+      - property: formula.Date
+        direction: DESC
+      - property: formula.Untitled
+        direction: ASC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      file.name: 204
+      formula.Date: 98
+      file.tags: 359
+      file.ctime: 273
+  - type: cards
+    name: Books
+    filters:
+      and:
+        - collection == "books"
+    order:
+      - file.name
+      - author
+      - formula.Date
+      - Date Published
+    sort:
+      - property: collection
+        direction: ASC
+      - property: author
+        direction: ASC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      file.name: 323
+      file.tags: 359
+      formula.Date: 269
+      file.ctime: 273
+    image: note.image
+    cardSize: 190
+    imageAspectRatio: 1.35
+  - type: table
+    name: Dreams
+    filters:
+      and:
+        - collection == "dreams"
+    order:
+      - file.name
+      - formula.Date
+      - file.tags
+      - file.mtime
+      - file.size
+    sort:
+      - property: formula.Date
+        direction: ASC
+      - property: file.mtime
+        direction: ASC
+      - property: file.size
+        direction: DESC
+      - property: file.tags
+        direction: ASC
+      - property: collection
+        direction: ASC
+      - property: formula.Untitled
+        direction: ASC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      file.name: 294
+      file.tags: 359
+    cardSize: 200
+  - type: table
+    name: Projects
+    filters:
+      or:
+        - file.inFolder("3 - Projects")
+        - file.path == "3 - Projects/"
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - priority
+      - area
+    sort:
+      - property: area
+        direction: DESC
+      - property: priority
+        direction: DESC
+      - property: formula.Date
+        direction: DESC
+      - property: collection
+        direction: ASC
+      - property: file.ctime
+        direction: DESC
+    limit: 10
+    columnSize:
+      file.name: 208
+  - type: table
+    name: People
+    filters:
+      and:
+        - collection == "people"
+    order:
+      - file.name
+      - born
+      - died
+    columnSize:
+      file.name: 172
