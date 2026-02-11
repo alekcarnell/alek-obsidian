@@ -1,5 +1,5 @@
 # alek-obsidian
-My personal do-it-all Obsidian vault set up. 
+My personal do-it-all Obsidian setup. 
 
 ## Summary
 I went through many iterations, trying just about every system and framework, from PARA to Zettelkasten to +ACEx, before settling into what I have now. 
